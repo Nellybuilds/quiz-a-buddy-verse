@@ -3,7 +3,7 @@ import React from "react";
 import { quizTopics } from "@/data/quizData";
 import TopicCard from "@/components/TopicCard";
 import Header from "@/components/Header";
-import { Brain, GameController } from "lucide-react";
+import { Award, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
           <div className="mt-6 inline-block">
             <Button asChild className="bg-quiz-primary hover:bg-quiz-primary/90 flex items-center gap-2">
               <Link to="/matching-game">
-                <GameController className="h-5 w-5" />
+                <Award className="h-5 w-5" />
                 Try the Matching Game
               </Link>
             </Button>
