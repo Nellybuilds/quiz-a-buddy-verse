@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useQuiz } from "@/context/QuizContext";
-import { Button } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import ProgressBar from "@/components/ProgressBar";
 import QuizOption from "@/components/QuizOption";
 import ResultSummary from "@/components/ResultSummary";
