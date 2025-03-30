@@ -14,28 +14,28 @@ export const quizTopics: QuizTopic[] = [
     title: "Vector Databases",
     description: "Explore your understanding of vector databases and how they enable semantic search capabilities.",
     icon: "database-backup",
-    questionCount: 5,
+    questionCount: 100,
   },
   {
     id: "verification",
     title: "Verification Tools",
     description: "Challenge yourself on tools and techniques for verifying and evaluating AI outputs.",
     icon: "check",
-    questionCount: 5,
+    questionCount: 100,
   },
   {
     id: "fine-tuning",
     title: "LLM Fine Tuning",
     description: "Test your knowledge on methods for fine-tuning large language models for specific tasks.",
     icon: "settings",
-    questionCount: 5,
+    questionCount: 100,
   },
   {
     id: "orchestration",
     title: "AI Orchestration",
     description: "Assess your understanding of AI orchestration frameworks and how they manage AI workflows.",
     icon: "layers",
-    questionCount: 5,
+    questionCount: 100,
   },
 ];
 
