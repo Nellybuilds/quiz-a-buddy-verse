@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QuizProvider } from "./context/QuizContext";
 import Home from "./pages/Home";
 import QuizPage from "./pages/QuizPage";
+import MatchingGamePage from "./pages/MatchingGamePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/quiz/:topicId" element={<QuizPage />} />
+            <Route path="/matching-game/:topicId?" element={<MatchingGamePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
