@@ -369,32 +369,6 @@ export const quizQuestions: QuizQuestion[] = [
 
   // Vector Database Questions
   {
-    id: "vector-db-6",
-    question: "What is the benefit of using vector databases over traditional databases for semantic search?",
-    options: [
-      "They are faster at processing SQL queries",
-      "They enable similarity-based search using vector embeddings",
-      "They use less storage space",
-      "They are easier to maintain"
-    ],
-    correctAnswer: 1,
-    explanation: "Vector databases are specifically designed to handle similarity-based search using vector embeddings, making them ideal for semantic search applications where exact matches aren't required.",
-    topicId: "vector-db"
-  },
-  {
-    id: "vector-db-7",
-    question: "What is 'index optimization' in vector databases?",
-    options: [
-      "Reducing the size of stored vectors",
-      "Improving search speed by organizing vectors efficiently",
-      "Converting vectors to SQL format",
-      "Compressing the database"
-    ],
-    correctAnswer: 1,
-    explanation: "Index optimization in vector databases involves organizing vectors in a way that enables faster similarity search, often using techniques like clustering or tree-based structures.",
-    topicId: "vector-db"
-  },
-  {
     id: "vector-db-1",
     question: "What is the primary purpose of a vector database in AI applications?",
     options: [
@@ -457,6 +431,266 @@ export const quizQuestions: QuizQuestion[] = [
     ],
     correctAnswer: 1,
     explanation: "The curse of dimensionality refers to how the computational and storage requirements grow exponentially as vector dimensions increase, making efficient similarity search challenging in high-dimensional spaces.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-6",
+    question: "What is the benefit of using vector databases over traditional databases for semantic search?",
+    options: [
+      "They are faster at processing SQL queries",
+      "They enable similarity-based search using vector embeddings",
+      "They use less storage space",
+      "They are easier to maintain"
+    ],
+    correctAnswer: 1,
+    explanation: "Vector databases are specifically designed to handle similarity-based search using vector embeddings, making them ideal for semantic search applications where exact matches aren't required.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-7",
+    question: "What is 'index optimization' in vector databases?",
+    options: [
+      "Reducing the size of stored vectors",
+      "Improving search speed by organizing vectors efficiently",
+      "Converting vectors to SQL format",
+      "Compressing the database"
+    ],
+    correctAnswer: 1,
+    explanation: "Index optimization in vector databases involves organizing vectors in a way that enables faster similarity search, often using techniques like clustering or tree-based structures.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-8",
+    question: "What is vector quantization in the context of vector databases?",
+    options: [
+      "Converting continuous vectors to discrete values",
+      "Increasing vector dimensions",
+      "Measuring vector magnitude",
+      "Calculating vector averages"
+    ],
+    correctAnswer: 0,
+    explanation: "Vector quantization is a technique that reduces vector storage requirements by mapping continuous vectors to a discrete set of values while maintaining similarity relationships.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-9",
+    question: "What is the purpose of dimension reduction in vector databases?",
+    options: [
+      "To save disk space",
+      "To improve search efficiency while maintaining similarity relationships",
+      "To make vectors easier to visualize",
+      "To reduce database maintenance costs"
+    ],
+    correctAnswer: 1,
+    explanation: "Dimension reduction helps improve search efficiency by reducing vector dimensions while preserving the essential similarity relationships between vectors.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-10",
+    question: "What is data sharding in vector databases?",
+    options: [
+      "Splitting vectors across multiple servers",
+      "Breaking vectors into smaller dimensions",
+      "Compressing vector data",
+      "Converting vectors to binary format"
+    ],
+    correctAnswer: 0,
+    explanation: "Data sharding involves distributing vector data across multiple servers to improve scalability and performance in large vector databases.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-11",
+    question: "What is the role of clustering in vector databases?",
+    options: [
+      "To group similar vectors together for efficient retrieval",
+      "To reduce database size",
+      "To convert vectors to clusters",
+      "To create backup copies"
+    ],
+    correctAnswer: 0,
+    explanation: "Clustering helps organize similar vectors together, making retrieval more efficient by limiting the search space to relevant clusters.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-12",
+    question: "What is vector pruning?",
+    options: [
+      "Removing outdated vectors",
+      "Eliminating unnecessary vector dimensions",
+      "Reducing search space during query",
+      "Deleting duplicate vectors"
+    ],
+    correctAnswer: 2,
+    explanation: "Vector pruning is a technique that reduces the search space during query time by eliminating unlikely candidates early in the search process.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-13",
+    question: "What is the primary challenge in scaling vector databases?",
+    options: [
+      "Storage costs",
+      "Network bandwidth",
+      "Maintaining search accuracy with growing data",
+      "User authentication"
+    ],
+    correctAnswer: 2,
+    explanation: "As vector databases grow, maintaining high search accuracy while keeping query times low becomes increasingly challenging.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-14",
+    question: "What is vector indexing?",
+    options: [
+      "Numbering vectors sequentially",
+      "Creating data structures for efficient similarity search",
+      "Converting vectors to indexes",
+      "Sorting vectors by value"
+    ],
+    correctAnswer: 1,
+    explanation: "Vector indexing involves creating specialized data structures that enable efficient similarity search operations on vector data.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-15",
+    question: "What is the purpose of metadata in vector databases?",
+    options: [
+      "To store vector dimensions",
+      "To provide additional context about stored vectors",
+      "To compress vector data",
+      "To calculate vector similarities"
+    ],
+    correctAnswer: 1,
+    explanation: "Metadata provides additional context and information about stored vectors, enabling filtering and organization beyond vector similarity.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-16",
+    question: "What is vector normalization?",
+    options: [
+      "Converting vectors to normal distribution",
+      "Scaling vectors to unit length",
+      "Standardizing vector format",
+      "Averaging vector values"
+    ],
+    correctAnswer: 1,
+    explanation: "Vector normalization involves scaling vectors to unit length, which is often useful for consistent similarity comparisons.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-17",
+    question: "What is the purpose of batch processing in vector databases?",
+    options: [
+      "To process vectors in groups for better efficiency",
+      "To create vector backups",
+      "To compress multiple vectors",
+      "To delete vectors in bulk"
+    ],
+    correctAnswer: 0,
+    explanation: "Batch processing allows vector databases to handle multiple vectors simultaneously, improving overall throughput and efficiency.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-18",
+    question: "What is vector database replication?",
+    options: [
+      "Copying vectors multiple times",
+      "Creating backup databases",
+      "Maintaining synchronized copies across multiple servers",
+      "Duplicating vector dimensions"
+    ],
+    correctAnswer: 2,
+    explanation: "Replication involves maintaining synchronized copies of vector data across multiple servers for improved availability and fault tolerance.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-19",
+    question: "What is the role of caching in vector databases?",
+    options: [
+      "Storing temporary vectors",
+      "Improving query performance for frequent searches",
+      "Backing up vector data",
+      "Compressing vector storage"
+    ],
+    correctAnswer: 1,
+    explanation: "Caching helps improve query performance by storing frequently accessed vectors or search results in faster memory.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-20",
+    question: "What is vector database partitioning?",
+    options: [
+      "Dividing vectors into smaller parts",
+      "Organizing vectors into distinct sections",
+      "Breaking down vector dimensions",
+      "Separating vector metadata"
+    ],
+    correctAnswer: 1,
+    explanation: "Partitioning involves organizing vectors into distinct sections to improve manageability and query performance.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-21",
+    question: "What is approximate nearest neighbor (ANN) search?",
+    options: [
+      "Finding exact vector matches",
+      "Finding similar vectors quickly with some accuracy trade-off",
+      "Searching for neighboring servers",
+      "Approximating vector values"
+    ],
+    correctAnswer: 1,
+    explanation: "ANN search finds similar vectors quickly by trading off some accuracy for improved search speed.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-22",
+    question: "What is vector database consistency?",
+    options: [
+      "Keeping vectors unchanged",
+      "Ensuring all database copies have the same data",
+      "Maintaining vector dimensions",
+      "Standardizing vector format"
+    ],
+    correctAnswer: 1,
+    explanation: "Consistency ensures that all copies of the vector database maintain the same data state across distributed systems.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-23",
+    question: "What is the purpose of vector database backup?",
+    options: [
+      "Creating duplicate vectors",
+      "Protecting against data loss",
+      "Improving search speed",
+      "Reducing storage space"
+    ],
+    correctAnswer: 1,
+    explanation: "Vector database backup protects against data loss by maintaining separate copies of vector data and metadata.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-24",
+    question: "What is vector database monitoring?",
+    options: [
+      "Watching vector changes",
+      "Tracking database performance and health metrics",
+      "Observing vector dimensions",
+      "Checking vector accuracy"
+    ],
+    correctAnswer: 1,
+    explanation: "Monitoring involves tracking various metrics to ensure the vector database is performing optimally and remains healthy.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-25",
+    question: "What is the role of filtering in vector databases?",
+    options: [
+      "Removing invalid vectors",
+      "Limiting search results based on metadata conditions",
+      "Cleaning vector data",
+      "Reducing vector dimensions"
+    ],
+    correctAnswer: 1,
+    explanation: "Filtering allows refinement of search results based on metadata conditions, combining vector similarity with traditional database queries.",
     topicId: "vector-db"
   },
 
