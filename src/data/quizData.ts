@@ -385,6 +385,32 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "Fully automating fine-tuning without human oversight is not typically considered a primary challenge. The other options represent genuine challenges in the fine-tuning process.",
     topicId: "fine-tuning"
   },
+  {
+    id: "fine-tuning-6",
+    question: "What is 'few-shot learning' in the context of LLM fine-tuning?",
+    options: [
+      "Training a model with very little data",
+      "Providing examples in the prompt to guide the model's behavior",
+      "Using multiple GPUs for training",
+      "Reducing model parameters"
+    ],
+    correctAnswer: 1,
+    explanation: "Few-shot learning in LLMs refers to providing example patterns in the prompt to guide the model's behavior, without actually modifying the model weights.",
+    topicId: "fine-tuning"
+  },
+  {
+    id: "fine-tuning-7",
+    question: "What is gradient checkpointing in LLM fine-tuning?",
+    options: [
+      "Saving model checkpoints regularly",
+      "A technique to reduce memory usage during training",
+      "Checking gradient values for errors",
+      "A way to validate model performance"
+    ],
+    correctAnswer: 1,
+    explanation: "Gradient checkpointing is a technique that trades computation time for memory by recomputing intermediate activations during the backward pass instead of storing them.",
+    topicId: "fine-tuning"
+  },
 
   // AI Orchestration Questions
   {
@@ -450,6 +476,32 @@ export const quizQuestions: QuizQuestion[] = [
     ],
     correctAnswer: 1,
     explanation: "LangChain is a popular open-source framework for orchestrating language model applications, providing tools for chaining together various components into cohesive applications.",
+    topicId: "orchestration"
+  },
+  {
+    id: "orchestration-6",
+    question: "What is a 'chain' in AI orchestration frameworks?",
+    options: [
+      "A series of linked AI components that process data sequentially",
+      "A physical connection between servers",
+      "A blockchain implementation",
+      "A security measure"
+    ],
+    correctAnswer: 0,
+    explanation: "In AI orchestration, a chain is a sequence of connected components that process data in order, where each component's output feeds into the next component.",
+    topicId: "orchestration"
+  },
+  {
+    id: "orchestration-7",
+    question: "What is the purpose of memory systems in AI orchestration?",
+    options: [
+      "To store model weights",
+      "To maintain context and state between interactions",
+      "To cache API responses",
+      "To save user preferences"
+    ],
+    correctAnswer: 1,
+    explanation: "Memory systems in AI orchestration help maintain context and state information between interactions, allowing for more coherent and contextually aware responses.",
     topicId: "orchestration"
   }
 ];
