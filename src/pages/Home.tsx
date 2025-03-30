@@ -3,7 +3,7 @@ import React from "react";
 import { quizTopics } from "@/data/quizData";
 import TopicCard from "@/components/TopicCard";
 import Header from "@/components/Header";
-import { Award, Brain } from "lucide-react";
+import { Award, BookOpen, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -23,11 +23,17 @@ const Home: React.FC = () => {
             vector databases, verification tools, and more.
           </p>
           
-          <div className="mt-6 inline-block">
+          <div className="mt-6 flex flex-wrap gap-4 justify-center">
             <Button asChild className="bg-quiz-primary hover:bg-quiz-primary/90 flex items-center gap-2">
               <Link to="/matching-game">
                 <Award className="h-5 w-5" />
                 Try the Matching Game
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="flex items-center gap-2">
+              <Link to="/lessons">
+                <BookOpen className="h-5 w-5" />
+                Browse Lesson Plans
               </Link>
             </Button>
           </div>
