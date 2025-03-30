@@ -34,7 +34,8 @@ const QuizPage: React.FC = () => {
     }
     
     startQuiz(topicId);
-  }, [topicId, startQuiz, navigate]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [topicId, navigate]); // Removed startQuiz from dependency array to prevent infinite loops
 
   if (!currentTopic || questions.length === 0) {
     return (
