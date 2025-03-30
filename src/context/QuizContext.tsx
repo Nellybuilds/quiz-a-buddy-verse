@@ -35,9 +35,13 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const topic = getTopicById(topicId);
     if (!topic) return;
     
-    const topicQuestions = getQuizQuestionsByTopic(topicId);
+    const allTopicQuestions = getQuizQuestionsByTopic(topicId);
+    // If we have fewer questions than needed, use all available questions
+    const questionsToUse = allTopicQuestions.length <= 100 ? allTopicQuestions : 
+      [...allTopicQuestions].sort(() => Math.random() - 0.5).slice(0, 100);
+      
     setCurrentTopic(topic);
-    setQuestions(topicQuestions);
+    setQuestions(questionsToUse);
     setCurrentQuestionIndex(0);
     setSelectedAnswer(null);
     setUserAnswers([]);
