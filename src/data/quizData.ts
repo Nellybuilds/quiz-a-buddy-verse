@@ -7,7 +7,7 @@ export const quizTopics: QuizTopic[] = [
     title: "RAG Systems",
     description: "Test your knowledge on Retrieval Augmented Generation systems and how they enhance LLM outputs.",
     icon: "database",
-    questionCount: 5,
+    questionCount: 100,
   },
   {
     id: "vector-db",
