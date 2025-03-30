@@ -953,6 +953,116 @@ export const quizQuestions: QuizQuestion[] = [
       "A series of linked AI components that process data sequentially",
       "A physical connection between servers",
       "A blockchain implementation",
+      "A method for encrypting data"
+    ],
+    correctAnswer: 0,
+    explanation: "In AI orchestration frameworks, a chain represents a sequence of linked AI components that process data one after another in a defined order.",
+    topicId: "orchestration"
+  },
+  {
+    id: "orchestration-7",
+    question: "What is the purpose of an orchestration callback system?",
+    options: [
+      "To make phone calls automatically",
+      "To handle events and monitor workflow progress",
+      "To schedule system reboots",
+      "To manage database backups"
+    ],
+    correctAnswer: 1,
+    explanation: "Callback systems in AI orchestration allow monitoring of workflow progress, handling of events, and execution of custom logic at different stages of processing.",
+    topicId: "orchestration"
+  },
+  {
+    id: "orchestration-8",
+    question: "What is a key benefit of using an AI orchestration framework?",
+    options: [
+      "Reduced cloud computing costs",
+      "Improved model training speed",
+      "Simplified integration and workflow management",
+      "Automatic model creation"
+    ],
+    correctAnswer: 2,
+    explanation: "AI orchestration frameworks primarily benefit developers by simplifying the integration of multiple AI components and managing complex workflows effectively.",
+    topicId: "orchestration"
+  },
+  {
+    id: "verification-8",
+    question: "What is semantic verification in AI systems?",
+    options: [
+      "Checking code syntax",
+      "Verifying the meaning and context of AI outputs",
+      "Testing system performance",
+      "Validating input formats"
+    ],
+    correctAnswer: 1,
+    explanation: "Semantic verification involves checking that AI outputs make sense in context and convey the intended meaning, beyond just syntactic correctness.",
+    topicId: "verification"
+  },
+  {
+    id: "verification-9",
+    question: "What is the role of adversarial testing in AI verification?",
+    options: [
+      "Testing AI systems with challenging inputs to find weaknesses",
+      "Comparing two AI systems against each other",
+      "Verifying system security",
+      "Testing network connectivity"
+    ],
+    correctAnswer: 0,
+    explanation: "Adversarial testing involves deliberately challenging AI systems with difficult or edge cases to identify potential weaknesses or failure modes.",
+    topicId: "verification"
+  },
+  {
+    id: "verification-10",
+    question: "Which metric is commonly used to verify text generation quality?",
+    options: [
+      "BLEU score",
+      "Frame rate",
+      "Network latency",
+      "Memory usage"
+    ],
+    correctAnswer: 0,
+    explanation: "BLEU score is a common metric used to evaluate the quality of machine-generated text by comparing it with human-written references.",
+    topicId: "verification"
+  },
+  {
+    id: "fine-tuning-8",
+    question: "What is the purpose of validation data in fine-tuning?",
+    options: [
+      "To train the model",
+      "To evaluate model performance on unseen data",
+      "To generate new training examples",
+      "To compress model size"
+    ],
+    correctAnswer: 1,
+    explanation: "Validation data helps evaluate how well the fine-tuned model performs on unseen data, helping detect issues like overfitting.",
+    topicId: "fine-tuning"
+  },
+  {
+    id: "fine-tuning-9",
+    question: "What is weight freezing in fine-tuning?",
+    options: [
+      "Cooling down GPU temperature",
+      "Keeping certain model parameters fixed during training",
+      "Saving model weights to disk",
+      "Reducing model precision"
+    ],
+    correctAnswer: 1,
+    explanation: "Weight freezing involves keeping certain layers or parameters of the model fixed during fine-tuning, often to preserve learned features while adapting others.",
+    topicId: "fine-tuning"
+  },
+  {
+    id: "fine-tuning-10",
+    question: "What is catastrophic forgetting in LLM fine-tuning?",
+    options: [
+      "Complete system failure",
+      "Loss of previously learned knowledge during new training",
+      "Forgetting to save model checkpoints",
+      "Running out of memory"
+    ],
+    correctAnswer: 1,
+    explanation: "Catastrophic forgetting occurs when a model loses previously learned knowledge or capabilities while being fine-tuned on new tasks.",
+    topicId: "fine-tuning"
+  }
       "A security measure"
     ],
     correctAnswer: 0,
