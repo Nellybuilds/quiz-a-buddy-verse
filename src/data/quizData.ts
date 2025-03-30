@@ -135,6 +135,32 @@ export const quizQuestions: QuizQuestion[] = [
 
   // Vector Database Questions
   {
+    id: "vector-db-6",
+    question: "What is the benefit of using vector databases over traditional databases for semantic search?",
+    options: [
+      "They are faster at processing SQL queries",
+      "They enable similarity-based search using vector embeddings",
+      "They use less storage space",
+      "They are easier to maintain"
+    ],
+    correctAnswer: 1,
+    explanation: "Vector databases are specifically designed to handle similarity-based search using vector embeddings, making them ideal for semantic search applications where exact matches aren't required.",
+    topicId: "vector-db"
+  },
+  {
+    id: "vector-db-7",
+    question: "What is 'index optimization' in vector databases?",
+    options: [
+      "Reducing the size of stored vectors",
+      "Improving search speed by organizing vectors efficiently",
+      "Converting vectors to SQL format",
+      "Compressing the database"
+    ],
+    correctAnswer: 1,
+    explanation: "Index optimization in vector databases involves organizing vectors in a way that enables faster similarity search, often using techniques like clustering or tree-based structures.",
+    topicId: "vector-db"
+  },
+  {
     id: "vector-db-1",
     question: "What is the primary purpose of a vector database in AI applications?",
     options: [
@@ -201,6 +227,32 @@ export const quizQuestions: QuizQuestion[] = [
   },
 
   // Verification Tools Questions
+  {
+    id: "verification-6",
+    question: "What is 'prompt injection testing' in AI verification?",
+    options: [
+      "Testing different prompts for better results",
+      "Checking if AI can be manipulated through malicious inputs",
+      "Injecting new training data",
+      "Testing prompt response speed"
+    ],
+    correctAnswer: 1,
+    explanation: "Prompt injection testing involves checking if an AI system can be manipulated or made to behave unexpectedly through carefully crafted malicious inputs.",
+    topicId: "verification"
+  },
+  {
+    id: "verification-7",
+    question: "What is the role of 'baseline testing' in AI verification?",
+    options: [
+      "Testing AI on simple tasks",
+      "Comparing AI performance against established standards",
+      "Testing basic system functionality",
+      "Setting up initial configurations"
+    ],
+    correctAnswer: 1,
+    explanation: "Baseline testing establishes a reference point for AI performance by comparing outputs against known standards or previous versions.",
+    topicId: "verification"
+  },
   {
     id: "verification-1",
     question: "What is the primary purpose of AI verification tools?",
