@@ -132,6 +132,240 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "Recall@k measures how often the relevant documents are within the top k retrieved documents, making it a common metric for evaluating retrieval performance in RAG systems.",
     topicId: "rag"
   },
+  {
+    id: "rag-8",
+    question: "What is the role of document chunking in RAG systems?",
+    options: [
+      "To reduce storage costs",
+      "To break documents into smaller, manageable pieces for retrieval",
+      "To compress documents",
+      "To encrypt sensitive information"
+    ],
+    correctAnswer: 1,
+    explanation: "Document chunking breaks large documents into smaller pieces that can be effectively embedded and retrieved, ensuring relevant context is captured.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-9",
+    question: "What is the purpose of re-ranking in RAG systems?",
+    options: [
+      "To sort documents by date",
+      "To improve retrieval accuracy by applying additional relevance criteria",
+      "To reduce database size",
+      "To organize documents alphabetically"
+    ],
+    correctAnswer: 1,
+    explanation: "Re-ranking helps improve retrieval accuracy by applying additional relevance criteria to the initial set of retrieved documents.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-10",
+    question: "Which embedding model characteristic is most important for RAG systems?",
+    options: [
+      "Model size",
+      "Semantic understanding capacity",
+      "Training speed",
+      "Memory usage"
+    ],
+    correctAnswer: 1,
+    explanation: "The embedding model's ability to capture and represent semantic meaning is crucial for effective retrieval in RAG systems.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-11",
+    question: "What is query expansion in RAG systems?",
+    options: [
+      "Making queries longer",
+      "Generating multiple variations of the query to improve retrieval",
+      "Expanding the database",
+      "Increasing query processing time"
+    ],
+    correctAnswer: 1,
+    explanation: "Query expansion involves generating multiple variations or reformulations of the original query to improve retrieval effectiveness.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-12",
+    question: "What is the role of context window size in RAG systems?",
+    options: [
+      "Screen display size",
+      "Maximum amount of context that can be processed at once",
+      "Database storage limit",
+      "Network packet size"
+    ],
+    correctAnswer: 1,
+    explanation: "Context window size determines how much retrieved information can be processed together by the language model.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-13",
+    question: "What is hybrid search in RAG systems?",
+    options: [
+      "Combining multiple databases",
+      "Using both keyword and semantic search methods",
+      "Searching across different languages",
+      "Using multiple GPUs"
+    ],
+    correctAnswer: 1,
+    explanation: "Hybrid search combines traditional keyword-based search with semantic search to improve retrieval accuracy.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-14",
+    question: "What is the purpose of document metadata in RAG systems?",
+    options: [
+      "To reduce file size",
+      "To provide additional context and filtering capabilities",
+      "To encrypt documents",
+      "To compress storage"
+    ],
+    correctAnswer: 1,
+    explanation: "Document metadata provides additional context and enables filtering capabilities during retrieval.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-15",
+    question: "What is chunk overlap in RAG systems?",
+    options: [
+      "Network congestion",
+      "Shared content between adjacent document chunks",
+      "Database conflicts",
+      "Memory overflow"
+    ],
+    correctAnswer: 1,
+    explanation: "Chunk overlap refers to the shared content between adjacent document chunks, helping maintain context across chunk boundaries.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-16",
+    question: "Which metric measures the diversity of retrieved documents in RAG?",
+    options: [
+      "Precision",
+      "Coverage",
+      "Latency",
+      "Throughput"
+    ],
+    correctAnswer: 1,
+    explanation: "Coverage measures how well the retrieved documents represent different aspects or perspectives of the query.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-17",
+    question: "What is the role of document preprocessing in RAG systems?",
+    options: [
+      "Reducing storage costs",
+      "Cleaning and standardizing text for better retrieval",
+      "Encrypting sensitive data",
+      "Compressing files"
+    ],
+    correctAnswer: 1,
+    explanation: "Document preprocessing involves cleaning and standardizing text to improve retrieval quality.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-18",
+    question: "What is retrieval augmented distillation?",
+    options: [
+      "A cooling system",
+      "Training smaller models using retrieved knowledge",
+      "Data compression technique",
+      "Network optimization"
+    ],
+    correctAnswer: 1,
+    explanation: "Retrieval augmented distillation involves training smaller models using knowledge retrieved from larger models or knowledge bases.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-19",
+    question: "What is the purpose of document ranking in RAG systems?",
+    options: [
+      "Alphabetical ordering",
+      "Ordering documents by relevance to the query",
+      "File size organization",
+      "Date-based sorting"
+    ],
+    correctAnswer: 1,
+    explanation: "Document ranking orders retrieved documents based on their relevance to the query, ensuring most relevant information is used first.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-20",
+    question: "What is cross-encoder reranking in RAG?",
+    options: [
+      "Video encoding",
+      "Using a separate model to improve ranking accuracy",
+      "Data compression",
+      "Network routing"
+    ],
+    correctAnswer: 1,
+    explanation: "Cross-encoder reranking uses a separate model to improve the accuracy of document ranking after initial retrieval.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-21",
+    question: "What is the role of embeddings cache in RAG systems?",
+    options: [
+      "Temporary storage",
+      "Improving retrieval speed by storing frequent embeddings",
+      "Data backup",
+      "Security feature"
+    ],
+    correctAnswer: 1,
+    explanation: "Embeddings cache improves retrieval speed by storing frequently used embeddings in memory.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-22",
+    question: "What is adaptive retrieval in RAG systems?",
+    options: [
+      "Random selection",
+      "Adjusting retrieval strategy based on query complexity",
+      "Hardware adaptation",
+      "Network optimization"
+    ],
+    correctAnswer: 1,
+    explanation: "Adaptive retrieval adjusts the retrieval strategy based on the complexity and requirements of each query.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-23",
+    question: "What is the purpose of citation tracking in RAG systems?",
+    options: [
+      "Academic references",
+      "Tracking source documents for generated responses",
+      "Legal compliance",
+      "Version control"
+    ],
+    correctAnswer: 1,
+    explanation: "Citation tracking helps maintain transparency by tracking which source documents were used to generate responses.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-24",
+    question: "What is incremental indexing in RAG systems?",
+    options: [
+      "Partial updates",
+      "Updating the index with new documents without full reindexing",
+      "Progress tracking",
+      "Performance monitoring"
+    ],
+    correctAnswer: 1,
+    explanation: "Incremental indexing allows updating the search index with new documents without requiring a complete reindex.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-25",
+    question: "What is the role of query routing in RAG systems?",
+    options: [
+      "Network routing",
+      "Directing queries to appropriate knowledge sources",
+      "Traffic management",
+      "Load balancing"
+    ],
+    correctAnswer: 1,
+    explanation: "Query routing directs queries to the most appropriate knowledge sources or retrieval strategies.",
+    topicId: "rag"
+  },
 
   // Vector Database Questions
   {
