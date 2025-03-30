@@ -55,6 +55,32 @@ export const quizQuestions: QuizQuestion[] = [
     topicId: "rag"
   },
   {
+    id: "rag-6",
+    question: "What type of index is commonly used in RAG systems for efficient retrieval?",
+    options: [
+      "B-tree index",
+      "Vector index",
+      "Hash index",
+      "Binary search tree"
+    ],
+    correctAnswer: 1,
+    explanation: "Vector indices are essential in RAG systems as they enable efficient similarity search over embedded documents.",
+    topicId: "rag"
+  },
+  {
+    id: "rag-7",
+    question: "How does RAG help with knowledge cutoff issues in LLMs?",
+    options: [
+      "By training the model on newer data",
+      "By retrieving up-to-date information during inference",
+      "By reducing model size",
+      "By increasing context window"
+    ],
+    correctAnswer: 1,
+    explanation: "RAG systems can access current information through their retrieval component, helping overcome the knowledge cutoff limitation of pre-trained LLMs.",
+    topicId: "rag"
+  },
+  {
     id: "rag-2",
     question: "Which of these is NOT a typical component of a RAG system?",
     options: [
