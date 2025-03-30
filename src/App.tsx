@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,8 +10,6 @@ import QuizPage from "./pages/QuizPage";
 import MatchingGamePage from "./pages/MatchingGamePage";
 import LessonPlansPage from "./pages/LessonPlansPage";
 import NotFound from "./pages/NotFound";
-import './App.css'; // Added CSS import
-import { VectorSearch } from './components/VectorSearch'; // Added import for VectorSearch
 
 const queryClient = new QueryClient();
 
@@ -21,17 +20,13 @@ const App = () => (
       <Sonner />
       <QuizProvider>
         <BrowserRouter>
-          <div className="App"> {/* Added div for VectorSearch */}
-            <h1>Welcome to the Quiz App</h1>
-            <VectorSearch /> {/* Added VectorSearch component */}
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/quiz/:topicId" element={<QuizPage />} />
-              <Route path="/matching-game/:topicId?" element={<MatchingGamePage />} />
-              <Route path="/lessons" element={<LessonPlansPage />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div> {/* Closing div */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/quiz/:topicId" element={<QuizPage />} />
+            <Route path="/matching-game/:topicId?" element={<MatchingGamePage />} />
+            <Route path="/lessons" element={<LessonPlansPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </BrowserRouter>
       </QuizProvider>
     </TooltipProvider>
@@ -39,18 +34,3 @@ const App = () => (
 );
 
 export default App;
-
-
-// Minimal VectorSearch component (replace with your actual implementation)
-export const VectorSearch = () => {
-  return (
-    <div>
-      <h2>Search (Placeholder)</h2>
-      <input type="text" placeholder="Enter search query" />
-      <button>Search</button>
-      <ul>
-        {/* Results would go here */}
-      </ul>
-    </div>
-  );
-};
