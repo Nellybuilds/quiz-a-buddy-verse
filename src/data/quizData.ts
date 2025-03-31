@@ -1,4 +1,3 @@
-
 import { QuizQuestion, QuizTopic } from "../types/quiz";
 
 export const quizTopics: QuizTopic[] = [
@@ -786,198 +785,113 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "A significant challenge in LLM verification is determining whether departures from factual accuracy represent errors or appropriate creative content, especially in contexts where creativity is expected.",
     topicId: "verification"
   },
-
-  // LLM Fine Tuning Questions
   {
-    id: "fine-tuning-1",
-    question: "What is fine-tuning in the context of Large Language Models?",
+    id: "verification-8",
+    question: "What is 'explainability' in AI verification?",
     options: [
-      "The process of reducing model size",
-      "Training a pre-trained model on a specific dataset for a particular task",
-      "Manually editing model weights",
-      "Converting a model to a different programming language"
+      "Making AI models smaller and faster",
+      "The ability to understand and interpret AI decisions and outputs",
+      "Explaining AI concepts to non-technical users",
+      "Creating documentation for AI systems"
     ],
     correctAnswer: 1,
-    explanation: "Fine-tuning involves taking a pre-trained language model and further training it on a specific dataset to adapt it for particular tasks or domains, leveraging transfer learning.",
-    topicId: "fine-tuning"
+    explanation: "Explainability in AI verification refers to methods and techniques that make AI decisions and outputs transparent and interpretable to humans, which is crucial for building trust and enabling effective verification.",
+    topicId: "verification"
   },
   {
-    id: "fine-tuning-2",
-    question: "Which technique helps prevent catastrophic forgetting during fine-tuning?",
+    id: "verification-9",
+    question: "What is 'counterfactual testing' in AI verification?",
     options: [
-      "Gradient descent",
-      "Parameter-Efficient Fine-Tuning (PEFT)",
-      "Increasing learning rate",
-      "Using larger batch sizes"
+      "Testing against fictional scenarios",
+      "Examining what an AI would output if inputs were slightly different",
+      "Testing AI on historical data",
+      "Verifying AI against untrue statements"
     ],
     correctAnswer: 1,
-    explanation: "Parameter-Efficient Fine-Tuning (PEFT) techniques like LoRA modify only a small subset of model parameters, helping to preserve the knowledge from pre-training while adapting to new tasks.",
-    topicId: "fine-tuning"
+    explanation: "Counterfactual testing involves examining how AI outputs change when inputs are slightly altered, helping identify causal relationships and verify robustness in decision-making.",
+    topicId: "verification"
   },
   {
-    id: "fine-tuning-3",
-    question: "What is LoRA in the context of LLM fine-tuning?",
+    id: "verification-10",
+    question: "What is 'model-graded evaluation' in AI verification?",
     options: [
-      "Low-Rank Adaptation - a technique that adds trainable low-rank matrices",
-      "Logarithmic Reasoning Approach - a method for improving logical reasoning",
-      "Long Range Attention - an extension of the attention mechanism",
-      "Learning on Reinforced Applications - a reinforcement learning technique"
+      "Humans grading model outputs",
+      "Using one AI to evaluate the outputs of another AI",
+      "Automatically grading based on predefined metrics",
+      "Giving letter grades to AI models"
+    ],
+    correctAnswer: 1,
+    explanation: "Model-graded evaluation uses one AI system (often a more capable one) to evaluate the outputs of another AI system, providing scalable assessment capabilities.",
+    topicId: "verification"
+  },
+  {
+    id: "verification-11",
+    question: "What is 'bias detection' in AI verification?",
+    options: [
+      "Finding unfair preferences in AI outputs based on protected attributes",
+      "Detecting tilted cameras in computer vision",
+      "Identifying political leanings in content",
+      "Finding monetary incentives in AI development"
     ],
     correctAnswer: 0,
-    explanation: "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique that adds trainable low-rank decomposition matrices to existing weights, reducing the number of parameters that need to be updated.",
-    topicId: "fine-tuning"
+    explanation: "Bias detection focuses on identifying and measuring unfair patterns or preferences in AI outputs, particularly those related to protected characteristics like race, gender, or age.",
+    topicId: "verification"
   },
   {
-    id: "fine-tuning-4",
-    question: "What is typically more important than the size of the fine-tuning dataset?",
+    id: "verification-12",
+    question: "What is 'adversarial testing' in AI verification?",
     options: [
-      "The learning rate used",
-      "The quality and relevance of the dataset",
-      "The number of training epochs",
-      "The hardware used for training"
+      "Testing AI by competing with another AI",
+      "Deliberately providing challenging inputs to find weaknesses",
+      "Testing in hostile network environments",
+      "Training two AIs against each other"
     ],
     correctAnswer: 1,
-    explanation: "While having adequate data is important, the quality and relevance of the fine-tuning dataset to the target task is generally more important than its size for achieving good performance.",
-    topicId: "fine-tuning"
+    explanation: "Adversarial testing involves deliberately providing difficult or challenging inputs to AI systems in order to identify weaknesses, edge cases, or potential failure modes.",
+    topicId: "verification"
   },
   {
-    id: "fine-tuning-5",
-    question: "Which of these is NOT a common challenge in LLM fine-tuning?",
+    id: "verification-13",
+    question: "What is 'automated verification' in AI systems?",
     options: [
-      "Overfitting on small datasets",
-      "High computational requirements",
-      "Automating the fine-tuning without human oversight",
-      "Evaluating the fine-tuned model's performance"
+      "Manual checking by experts",
+      "Using software tools to systematically check AI outputs",
+      "Self-verification by the AI system",
+      "Verification done without human involvement"
+    ],
+    correctAnswer: 1,
+    explanation: "Automated verification involves using specialized software tools and techniques to systematically check AI outputs for issues, errors, or compliance with requirements.",
+    topicId: "verification"
+  },
+  {
+    id: "verification-14",
+    question: "What is 'ground truth' in AI verification?",
+    options: [
+      "The lowest error rate achievable",
+      "Facts known to be absolutely true",
+      "The correct or validated information against which AI outputs are compared",
+      "The physical world as opposed to virtual simulations"
     ],
     correctAnswer: 2,
-    explanation: "Fully automating fine-tuning without human oversight is not typically considered a primary challenge. The other options represent genuine challenges in the fine-tuning process.",
-    topicId: "fine-tuning"
+    explanation: "Ground truth refers to the correct or validated information that serves as a reference standard against which AI outputs are compared during verification.",
+    topicId: "verification"
   },
   {
-    id: "fine-tuning-6",
-    question: "What is 'few-shot learning' in the context of LLM fine-tuning?",
+    id: "verification-15",
+    question: "What is 'uncertainty quantification' in AI verification?",
     options: [
-      "Training a model with very little data",
-      "Providing examples in the prompt to guide the model's behavior",
-      "Using multiple GPUs for training",
-      "Reducing model parameters"
+      "Making AI systems more certain",
+      "Measuring how confident an AI is in its predictions",
+      "The uncertainty of AI development timelines",
+      "Quantifying doubt in verification processes"
     ],
     correctAnswer: 1,
-    explanation: "Few-shot learning in LLMs refers to providing example patterns in the prompt to guide the model's behavior, without actually modifying the model weights.",
-    topicId: "fine-tuning"
+    explanation: "Uncertainty quantification methods measure and report how confident an AI system is in its predictions, helping users understand when outputs may be less reliable.",
+    topicId: "verification"
   },
   {
-    id: "fine-tuning-7",
-    question: "What is gradient checkpointing in LLM fine-tuning?",
+    id: "verification-16",
+    question: "What is 'domain-specific verification' in AI systems?",
     options: [
-      "Saving model checkpoints regularly",
-      "A technique to reduce memory usage during training",
-      "Checking gradient values for errors",
-      "A way to validate model performance"
-    ],
-    correctAnswer: 1,
-    explanation: "Gradient checkpointing is a technique that trades computation time for memory by recomputing intermediate activations during the backward pass instead of storing them.",
-    topicId: "fine-tuning"
-  },
-
-  // AI Orchestration Questions
-  {
-    id: "orchestration-1",
-    question: "What is AI orchestration?",
-    options: [
-      "The process of training multiple AI models simultaneously",
-      "Coordinating multiple AI components to work together in a workflow",
-      "Converting AI models to work on various hardware",
-      "The arrangement of AI-generated music"
-    ],
-    correctAnswer: 1,
-    explanation: "AI orchestration involves coordinating and managing the interactions between multiple AI components, services, and systems to create cohesive workflows that accomplish complex tasks.",
-    topicId: "orchestration"
-  },
-  {
-    id: "orchestration-2",
-    question: "Which is NOT typically a component managed by AI orchestration platforms?",
-    options: [
-      "API calls to various AI services",
-      "Data flow between components",
-      "Error handling and retries",
-      "Hardware power management"
-    ],
-    correctAnswer: 3,
-    explanation: "Hardware power management is typically handled at the infrastructure level, not by AI orchestration platforms, which focus on workflow, data flow, and service coordination aspects.",
-    topicId: "orchestration"
-  },
-  {
-    id: "orchestration-3",
-    question: "What is an 'agent' in the context of AI orchestration?",
-    options: [
-      "A human supervisor overseeing AI systems",
-      "An autonomous AI component that can make decisions and take actions",
-      "A software license for commercial AI use",
-      "A testing environment for AI models"
-    ],
-    correctAnswer: 1,
-    explanation: "In AI orchestration, an agent typically refers to an autonomous AI component that can make decisions, take actions, and interact with other components or the environment based on its goals and observations.",
-    topicId: "orchestration"
-  },
-  {
-    id: "orchestration-4",
-    question: "Which pattern is commonly used in AI orchestration for handling sequential tasks?",
-    options: [
-      "Observer pattern",
-      "Factory pattern",
-      "Pipeline pattern",
-      "Singleton pattern"
-    ],
-    correctAnswer: 2,
-    explanation: "The pipeline pattern is commonly used in AI orchestration to handle sequential processing tasks, where the output of one component becomes the input to the next in a chain or workflow.",
-    topicId: "orchestration"
-  },
-  {
-    id: "orchestration-5",
-    question: "Which of these is a popular open-source AI orchestration framework?",
-    options: [
-      "TensorFlow",
-      "LangChain",
-      "ResNet",
-      "BERT"
-    ],
-    correctAnswer: 1,
-    explanation: "LangChain is a popular open-source framework for orchestrating language model applications, providing tools for chaining together various components into cohesive applications.",
-    topicId: "orchestration"
-  },
-  {
-    id: "orchestration-6",
-    question: "What is a 'chain' in AI orchestration frameworks?",
-    options: [
-      "A series of linked AI components that process data sequentially",
-      "A physical connection between servers",
-      "A blockchain implementation",
-      "A security measure"
-    ],
-    correctAnswer: 0,
-    explanation: "In AI orchestration, a chain is a sequence of connected components that process data in order, where each component's output feeds into the next component.",
-    topicId: "orchestration"
-  },
-  {
-    id: "orchestration-7",
-    question: "What is the purpose of memory systems in AI orchestration?",
-    options: [
-      "To store model weights",
-      "To maintain context and state between interactions",
-      "To cache API responses",
-      "To save user preferences"
-    ],
-    correctAnswer: 1,
-    explanation: "Memory systems in AI orchestration help maintain context and state information between interactions, allowing for more coherent and contextually aware responses.",
-    topicId: "orchestration"
-  }
-];
-
-export const getQuizQuestionsByTopic = (topicId: string): QuizQuestion[] => {
-  return quizQuestions.filter(question => question.topicId === topicId);
-};
-
-export const getTopicById = (topicId: string): QuizTopic | undefined => {
-  return quizTopics.find(topic => topic.id === topicId);
-};
+      "Verifying AI domains are properly registered",
+      "Tailoring verification methods to the specific field the AI operates in",
